@@ -54,21 +54,40 @@
 		}
 		.box {
 			width:100px;
+<<<<<<< HEAD
 			float:left;
 			padding:10px;
 			color:#fff;
 			height:50px;
 			margin:10px;
+=======
+			float:right;
+			padding:0px;
+			color:#fff;
+			height:50px;
+			margin:20px;
+			background:#fff;
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 			border:3px solid #4889a3;
 		}
 		.box1 {
 			background:#1E3F6E;
 		}
+<<<<<<< HEAD
+=======
+		.box1 {
+			background:#000;
+		}
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		.box2 {
 			background:#1E5B6E;
 		}
 		.blue {
+<<<<<<< HEAD
 		  color:#ffffff;
+=======
+		  	color:#ffffff;
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		}
 		.blue {
 		 	color:#003399;

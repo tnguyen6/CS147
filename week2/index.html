@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 	<head>
 		<title>DeadDrop</title>
 		<link rel="apple-touch-icon" href="appicon.png" />
@@ -10,6 +13,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		
 		<link href="style.css" rel="stylesheet" type="text/css">
+<<<<<<< HEAD
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 
 	
@@ -17,6 +21,15 @@
 
 	<body>
 			<!-- This is the top bit with the image. 
+=======
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	</head>
+
+	<body>
+	<style>
+	
+	</style>		<!-- This is the top bit with the image. 
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		I wonder why there's no image tag here? -->
 		<div class="whitebit"></div>
 
@@ -26,18 +39,29 @@
 			<div id="button">Refresh GPS: <div id="timer"></div></div>
 
 			<div class="area">
+<<<<<<< HEAD
 				<div class="box box1"><div class="latitude"></div></div>
+=======
+				<div class="box box1"><div class="latitude">Blah</div></div>
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 				<div class="box box2"><div class="longitude"></div></div>
 			</div>
 
 		</div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		<!-- Let's put in a timer here -->
 		<script type="text/javascript">
 		var count = 30;
 		var counter = setInterval(timer, 1000); 
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		function timer() {
 		    count = count - 1;
 		    if (count <= 0) {
@@ -46,7 +70,11 @@
 		        document.getElementById('button').style.visibility = 'hidden';
 		        return;
 		    }
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		    document.getElementById("timer").innerHTML = count + " secs";
 		}
 
@@ -55,6 +83,7 @@
 		<!-- Let's put in the geolocation stuff here -->
 		<script type="text/javascript">
 		$(function () {
+<<<<<<< HEAD
 		    $("#button").click(function () {
 		        getLocation();
 		    });
@@ -72,6 +101,27 @@
 		    alert(position.coords.latitude);
 		    alert(position.coords.longitude);
 		}
+=======
+    $("#button").click(function () {
+        getLocation();
+    });
+});
+
+function getLocation() {
+    if (navigator.geolocation) {
+       navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position) {
+    $(".box1").html(position.coords.latitude);
+    $(".box2").html(position.coords.longitude);
+} 
+
+getLocation();
+>>>>>>> 8865913693746c227d84e5de89407297f0367e59
 		</script>
 	</body>
 </html>
